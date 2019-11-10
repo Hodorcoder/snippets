@@ -1,0 +1,38 @@
+=======================================================================
+IMAGE NOTES
+=======================================================================
+histogram_seqlen.png    Histogram of the sequence length (aka total stopping time) for the numbers in the range [1..10^8] inclusive. For this range, the longest total stopping time is for the starting number 63728127 (taking 949 steps)
+
+=======================================================================
+NOTES
+=======================================================================
+-----
+Stats for total stopping time
+Generated using
+R -q -e "x <- read.csv('data.txt', header = F); summary(x); sd(x[ , 1])"
+
+For starting numbers in the range [1..10^8] inclusive:
+       
+       V1       
+ Min.   :  0.0  
+ 1st Qu.:128.0  
+ Median :173.0  
+ Mean   :179.2  
+ 3rd Qu.:221.0  
+ Max.   :949.0  
+[1] 66.5765
+
+
+For [1..10000]:
+
+       V1        
+ Min.   :  0.00  
+ 1st Qu.: 45.00  
+ Median : 73.00  
+ Mean   : 84.97  
+ 3rd Qu.:125.00  
+ Max.   :261.00  
+[1] 46.59086
+
+
+------
