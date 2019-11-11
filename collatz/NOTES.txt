@@ -1,7 +1,10 @@
 =======================================================================
 IMAGE NOTES
 =======================================================================
-histogram_seqlen.png    Histogram of the sequence length (aka total stopping time) for the numbers in the range [1..10^8] inclusive. For this range, the longest total stopping time is for the starting number 63728127 (taking 949 steps)
+histogram_seqlen.png    Histogram of the sequence length (aka total
+stopping time) for the numbers in the range [1..10^8] inclusive. For
+this range, the longest total stopping time is for the starting number
+63728127 (taking 949 steps)
 
 =======================================================================
 NOTES
@@ -36,3 +39,36 @@ For [1..10000]:
 
 
 ------
+
+http://oeis.org/A153330
+
+Delta in adjacent elements of the sequence quantifying the steps needed for n to converge to 1 in the Collatz Conjecture
+
+From program:
+
+For 2 < n <= 10^8
+
+    Min delta = -897 (first at 63728128)   Max delta = 822 (first at 63728127)
+    
+            V1      
+        Min.   :-897  
+        1st Qu.:   0  
+        Median :   0  
+        Mean   :   0  
+        3rd Qu.:   0  
+        Max.   : 822  
+        [1] 71.79801
+
+for 2 < n <= 200
+
+    Min delta = -101 (first at 32)   Max delta = 114 (first at 129)
+    
+              V1           
+        Min.   :-101.0000  
+        1st Qu.: -13.0000  
+        Median :   0.0000  
+        Mean   :   0.1306  
+        3rd Qu.:  13.0000  
+        Max.   : 114.0000  
+        [1] 47.79611
+
