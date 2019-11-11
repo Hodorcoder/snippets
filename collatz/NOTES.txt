@@ -20,7 +20,7 @@ For starting numbers in the range [1..10^8] inclusive:
  Mean   :179.2  
  3rd Qu.:221.0  
  Max.   :949.0  
-[1] 66.5765
+[1] 66.5765             The standard deviation
 
 
 For [1..10000]:
